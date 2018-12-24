@@ -1,0 +1,19 @@
+{
+  "name": "lpjson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager": "electron-packager . lpjson --overwrite --asar=true --platform=win32 --arch=x64 --icon=assets/img/favicon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"lpjson\" --electron-version=4.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.0",
+    "xlsx": "^0.14.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^13.0.1"
+  }
+}
