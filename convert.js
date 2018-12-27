@@ -55,7 +55,7 @@ const convertJSON = function(raw) {
         case 'Say':
           talk.type = type;
           if (result) {
-            talk.emotion = `(${result[1]})`;
+            talk.emotion = `(${result[1]}) `;
             talk.text = result[2];
           } else {
             talk.text = value;
@@ -69,7 +69,7 @@ const convertJSON = function(raw) {
         case 'Sing':
           talk.type = type;
           if (result) {
-            talk.emotion = `(${result[1]})`;
+            talk.emotion = `(${result[1]}) `;
             talk.notice = result[2];
           } else {
             talk.notice = value;
